@@ -2,5 +2,14 @@
 
 Game of chess, programmed in Python using pygame-ce.
 
-To run the game, source the venv via `source venv/bin/activate` and execute `python -m src.gui`.
-To run the unit tests, after sourcing the venv, execute `python -m tests`.
+## Create a virtual environent
+`python3 -m venv ./venv`
+
+## Activate virtual environment
+`source venv/bin/activate`
+
+## Running the game
+Create & activate the venv, then execute `python -m src.gui`.
+
+## Running the unit tests
+Create & activate the venv, then execute `python -m tests`.
