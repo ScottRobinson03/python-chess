@@ -11,5 +11,5 @@ Game of chess, programmed in Python using pygame-ce.
 ## Running the game
 Create & activate the venv, then execute `python -m src.gui`.
 
-## Running the unit tests
+## Running the unit tests
 Create & activate the venv, then execute `python -m tests`.
