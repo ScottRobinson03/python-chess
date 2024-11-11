@@ -186,7 +186,10 @@ def main() -> None:
                             # Clicked on the same piece, so ignore
                             continue
                         for move in moves_for_first_piece_clicked:
-                            if move.ends_at(col_indx, row_indx):
+                            # NB: We check not only if the move ends at the clicked square but also
+                            # if it starts at the clicked square, since when castling you click the
+                            # square of the piece you're castling with, not the square your piece moves to.
+                            if move.ends_at(col_indx, row_indx) or move.starts_at(col_indx, row_indx):
                                 draw_reason = game.perform_move(move)
 
                                 if not move.captures_piece or move.promotes_pawn:
